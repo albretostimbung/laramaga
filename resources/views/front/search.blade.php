@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <link href="./main.css" rel="stylesheet" />
+    <link href="{{ asset('output.css') }}" rel="stylesheet" />
+    <link href="{{ asset('main.css') }}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
 </head>
@@ -51,7 +51,7 @@
             <label for="search-bar"
                 class="w-[500px] flex p-[12px_20px] transition-all duration-300 gap-[10px] ring-1 ring-[#E8EBF4] focus-within:ring-2 focus-within:ring-[#FF6B18] rounded-[50px] group">
                 <div class="w-5 h-5 flex shrink-0">
-                    <img src="assets/images/icons/search-normal.svg" alt="icon" />
+                    <img src="{{ asset('assets/images/icons/search-normal.svg') }}" alt="icon" />
                 </div>
                 <input autocomplete="off" type="text" id="search-bar" name="keyword"
                     placeholder="Search hot trendy news today..."
